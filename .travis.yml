@@ -1,6 +1,15 @@
 language: node_js
 node_js:
-  - '0.10'
+  - "0.10"
+branches:
+  only:
+    - angular
 before_script:
-  - 'npm install -g bower grunt-cli'
-  - 'bower install'
+  - npm install -g bower
+  - npm install -g grunt
+  - npm install phantomjs
+  - npm install -g karma
+  - npm install karma-jasmin --save-dev
+  - npm install karma-chrome-launcher
+  - bower install
+  - grunt test
