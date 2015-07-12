@@ -25,7 +25,7 @@ angular.module('flickrAngularApp').controller('MainCtrl',
 			});
 		};
 
-		$scope.data = {};
+		$scope.data = {'test':'test'};
 
 		$scope.searchText = photoService.searchText;
 
