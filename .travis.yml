@@ -4,12 +4,16 @@ node_js:
 branches:
   only:
     - angular
+
+
 before_script:
   - npm install -g bower
   - npm install -g grunt
+  - npm install -g grunt-cli
   - npm install phantomjs
-  - npm install -g karma
+  - npm install karma --save-dev
+  - npm install karma-cli --saev-dev
   - npm install karma-jasmin --save-dev
-  - npm install karma-chrome-launcher
+  - npm install karma-phantomjs-launcher --save-dev
   - bower install
   - grunt test
