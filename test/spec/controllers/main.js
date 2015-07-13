@@ -19,6 +19,6 @@ describe('Controller: MainCtrl', function () {
   it('should take image from flickr', function () {
     // expect(scope.data.length).toBe(1);
     // expect(scope.photos.length).toBe(1);
-    expect(scope.data).toEqual(1);
+    expect(scope.data).toEqual({});
   });
 });
