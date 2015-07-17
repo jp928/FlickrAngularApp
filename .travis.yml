@@ -11,5 +11,6 @@ before_script:
   - npm install karma-cli --saev-dev
   - npm install karma-jasmine --save-dev
   - npm install karma-phantomjs-launcher --save-dev
+  - npm install karma-coverage --save-dev
   - bower install
   - grunt test
